@@ -1,5 +1,6 @@
 <script setup lang="ts">
 
+import { RouterLink } from 'vue-router';
 import ProjectItem from './partials/ProjectItem.vue';
 
 const props = defineProps<{
@@ -9,6 +10,9 @@ const props = defineProps<{
         description: string;
         image_path: string;
         url: string;
+        technologies: Array<{
+            name: string;
+        }>
     }>
 }>();
 </script>
@@ -24,7 +28,7 @@ const props = defineProps<{
             </ul>
         </div>
         <div class="mt-12">
-            <a href=""
+            <RouterLink to="/projects"
                 class="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group">
                 <span>
                     <span
@@ -43,7 +47,7 @@ const props = defineProps<{
                         </span>
                     </span>
                 </span>
-            </a>
+            </RouterLink>
         </div>
     </section>
 </template>

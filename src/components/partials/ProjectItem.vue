@@ -7,6 +7,9 @@ const props = defineProps<{
         description: string;
         image_path: string;
         url: string;
+        technologies: Array<{
+            name: string;
+        }>
     }
 }>();
 </script>
@@ -21,7 +24,7 @@ const props = defineProps<{
             </div>
             <div class="z-10 sm:order-2 sm:col-span-6">
                 <h3>
-                    <a :href="props.project.url"
+                    <a :href="props.project.url" target="_blank"
                         class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base">
                         <span
                             class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
@@ -42,6 +45,15 @@ const props = defineProps<{
                 <p class="mt-2 text-sm leading-normal">
                     {{ props.project.description }}
                 </p>
+                <ul class="mt-2 flex flex-wrap">
+                    
+                    <li v-for="(item, index) in props.project.technologies" :key="index" class="mr-1.5 mt-2">
+                        <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                            {{ item.name }}
+                        </div>
+                    </li>
+                </ul>
             </div>
             <img :src="props.project.image_path" alt="LiteCRM"
                 class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
