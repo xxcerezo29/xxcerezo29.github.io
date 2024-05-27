@@ -1,0 +1,24 @@
+[
+  {
+    "position": "Intern",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore accusamus hic voluptatum molestias!",
+    "company": "Lightbulb Technology Corp.",
+    "company_url": "https://lightbulb.com.ph/",
+    "start_year": "2024(March)",
+    "end_year": "2024(June)",
+    "technologies": [
+      {
+        "name": "PHP"
+      },
+      {
+        "name": "TypeScript"
+      },
+      {
+        "name": "Laravel"
+      },
+      {
+        "name": "Vue"
+      }
+    ]
+  }
+]
