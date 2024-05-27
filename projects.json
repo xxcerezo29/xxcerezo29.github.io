@@ -1,9 +1,25 @@
 [
   {
+    "year": "2024",
     "title": "LiteCRM",
+    "company": "Lightbulb Technology Corp.",
     "type": "Web App",
     "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quaerat molestias aspernatur ullam voluptate maiores quibusdam, error architecto ipsam ad praesentium illo libero facilis harum.",
-    "image_path": "",
-    "url": "https://crm.lightbulb.com.ph/"
+    "image_path": "LiteCRM.JPG",
+    "url": "https://crm.lightbulb.com.ph/",
+    "technologies": [
+      {
+        "name": "PHP"
+      },
+      {
+        "name": "TypeScript"
+      },
+      {
+        "name": "Laravel"
+      },
+      {
+        "name": "Vue"
+      }
+    ]
   }
 ]
