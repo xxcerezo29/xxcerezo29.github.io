@@ -1,85 +1,110 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { onMounted, ref } from 'vue';
+import About from './components/About.vue';
+import Experience from './components/Experience.vue';
+import Projects from './components/Projects.vue';
+
+interface IExperience {
+  position: string;
+  description: string;
+  company: string;
+  company_url: string;
+  start_year: number | string;
+  end_year: number | string;
+  technologies: Array<{
+    name: string;
+  }>
+}
+interface IProject {
+  title: string;
+  type: string;
+  description: string;
+  image_path: string;
+  url: string;
+}
+
+const experiences = ref<IExperience[]>([]);
+const projects = ref<IProject[]>([]);
+
+onMounted(() => {
+  fetch('/experience.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      return response.json();
+    })
+    .then(data => {
+      experiences.value = data;
+    })
+    .catch(error => {
+      console.log('Error fetching experiences: ', error);
+    });
+
+  fetch('/projects.json').then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    return response.json();
+  })
+    .then(data => {
+      projects.value = data;
+    })
+    .catch(error => {
+      console.log('Error fetching experiences: ', error);
+    });
+})
+
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+    <div class="lg:flex lg:justify-between lg:gap-4">
+      <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+        <div>
+          <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Vincent Cerezo</h1>
+          <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
+            Full Stack Web Developer
+          </h2>
+          <p class="mt-4 max-2-xs leading-normal">
+            Testing
+          </p>
+          <nav class="hidden lg:block">
+            <ul class="mt-16 w-max">
+              <li>
+                <a href="#about" class="flex items-center py-3 active">About</a>
+              </li>
+              <li>
+                <a href="#experience" class="flex items-center py-3 active">Experience</a>
+              </li>
+              <li>
+                <a href="#projects" class="flex items-center py-3 active">Projects</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="ml-1 mt-8 flex items-center">
+          <li class="hover:cursor-pointer mr-5 text-xs shrink-0">
+            <v-icon name="bi-github" animation="float" hover scale="2" />
+          </li>
+          <li class="hover:cursor-pointer  mr-5 text-xs shrink-0">
+            <v-icon name="bi-linkedin" animation="float" hover scale="2" />
+          </li>
+          <li class="hover:cursor-pointer  mr-5 text-xs shrink-0">
+            <v-icon name="fa-instagram" animation="float" hover scale="2" />
+          </li>
+        </ul>
+      </header>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+      <main class="pt-24 lg:w-1/2 lg:py-24">
+        <About />
+        <Experience :experiences="experiences" />
+        <Projects :projects="projects" />
+      </main>
     </div>
-  </header>
+  </div>
 
-  <RouterView />
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
-</style>
