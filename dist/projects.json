@@ -1,9 +1,177 @@
 [
   {
-    "title": "LiteCRM",
+    "year": "2024 - (Present)",
+    "title": "HPS Scheduling system",
+    "company": "KWIKWEB OPC",
     "type": "Web App",
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quaerat molestias aspernatur ullam voluptate maiores quibusdam, error architecto ipsam ad praesentium illo libero facilis harum.",
+    "description": "HPS Scheduling is a scheduling system designed to prioritize individuals needs and foster personalized care or service delivery.",
     "image_path": "",
-    "url": "https://crm.lightbulb.com.ph/"
+    "url": "",
+    "technologies": [
+      {
+        "name": "PHP"
+      },
+
+      {
+        "name": "Laravel"
+      },
+      {
+        "name": "Vue"
+      },
+      {
+        "name": "Full Stack Development"
+      },
+      {
+        "name": "Qusaar Framework"
+      },
+      {
+        "name": "TypeScript"
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "title": "Waste Management with mobile notification system for CENRO",
+    "company": "Capstone Project",
+    "type": "Web App and Mobile App",
+    "description": "WMMNS provides web and mobile platform to improve waste management in Santiago city. It addresses several problems like missed collection hours, redundant routes. Poor communication, and lack of tracking for garbage truck itineraries.",
+    "image_path": "",
+    "url": "",
+    "technologies": [
+      {
+        "name": "PHP"
+      },
+
+      {
+        "name": "Laravel"
+      },
+      {
+        "name": "Vue"
+      },
+      {
+        "name": "Full Stack Development"
+      },
+      {
+        "name": "Mobile Development"
+      },
+      {
+        "name": "Inertia.js"
+      },
+      {
+        "name": "IONIC Framework"
+      },
+      {
+        "name": "Leaflet.js"
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "title": "Algo Trading Website",
+    "company": " KWIKWEB OPC",
+    "type": "Web App",
+    "description": "Algo-trading website with an integrated Content Management System (CMS), empowering users to streamline trading strategies and manage content effortlessly",
+    "image_path": "https://algotrading.forex/images/algo-logo-tr.png",
+    "url": "https://algotrading.forex/",
+    "technologies": [
+      {
+        "name": "PHP"
+      },
+      {
+        "name": "TypeScript"
+      },
+      {
+        "name": "Laravel"
+      },
+      {
+        "name": "Vue"
+      },
+      {
+        "name": "Inertia.js"
+      },
+      {
+        "name": "Nuxt.js"
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "title": "Kwikhub",
+    "company": " KWIKWEB OPC",
+    "type": "Web App",
+    "description": "A cutting-edge Customer relationship management system designed to streamline customer engagement, improve sales processes and optimize data management for business.",
+    "image_path": "https://hub.kwikweb.ph/storage/businesses/1809615265698335.png",
+    "url": "https://hub.kwikweb.ph/",
+    "technologies": [
+      {
+        "name": "PHP"
+      },
+      {
+        "name": "TypeScript"
+      },
+      {
+        "name": "Laravel"
+      },
+      {
+        "name": "Vue"
+      },
+      {
+        "name": "Inertia.js"
+      }
+    ]
+  },
+  {
+    "year": "2024",
+    "title": "LiteCRM",
+    "company": "Lightbulb Technology Corp.",
+    "type": "Web App",
+    "description": " A lightweight yet powerful CRM system for small to medium size enterprises, focusing on simplicity, efficiency, and ease of use",
+    "image_path": "LiteCRM.JPG",
+    "url": "https://crm.lightbulb.com.ph/",
+    "technologies": [
+      {
+        "name": "PHP"
+      },
+      {
+        "name": "TypeScript"
+      },
+      {
+        "name": "Laravel"
+      },
+      {
+        "name": "Vue"
+      },
+      {
+        "name": "Inertia.js"
+      },
+      {
+        "name": "Leaflet.js"
+      }
+    ]
+  },
+  {
+    "year": "2023",
+    "title": "MapVerty: A web-based student household information manegement system with poverty and malnutrition analysis for isabela state univesity - Santiago extension unit",
+    "company": "Capstone Project",
+    "type": "Web App",
+    "description": "An information management that provides functionality for handling and identify experiencing poverty through geographical mapping. Facilitates the analysis of the povertyindex and malnutrition status of the students at Isabela state university Santiago extension unit.",
+    "image_path": "",
+    "url": "",
+    "technologies": [
+      {
+        "name": "PHP"
+      },
+
+      {
+        "name": "Laravel"
+      },
+      {
+        "name": "Vue"
+      },
+      {
+        "name": "Full Stack Development"
+      }
+    ]
   }
+
 ]
