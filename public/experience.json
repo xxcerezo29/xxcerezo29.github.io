@@ -1,10 +1,10 @@
 [
   {
-    "position": "Intern",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempore accusamus hic voluptatum molestias!",
-    "company": "Lightbulb Technology Corp.",
-    "company_url": "https://lightbulb.com.ph/",
-    "start_year": "2024(March)",
+    "position": "Full Stack Developer (Freelance)",
+    "description": "Designed and developed of three innovations system, ensuring seamless userexperience. Developed web application with diverse framework to meet client requirements.  Enhanced and modernized legacy codebases, boosting system performance and reducing redundant code.  Using Trello for project management and git for efficient version control.",
+    "company": "Kwikweb OPC",
+    "company_url": "https://kwikweb.ph/",
+    "start_year": "2024(July)",
     "end_year": "Present",
     "technologies": [
       {
@@ -18,6 +18,56 @@
       },
       {
         "name": "Vue"
+      },
+      {
+        "name": "Full Stack Development"
+      },
+      {
+        "name": "Quasar Framework"
+      }
+    ]
+  },
+  {
+    "position": "Intern",
+    "description": "Part of development team for creating a customer relationship management (CRM) system, optimizing client management processes, improving client management efficiency.  Wrote 100+ unit test ensuring flawless functionality across user interfaces, back-end logic, API connectivity, and relational database interactions. Leveraged Laravel with inertia vue to developed dynamic and responsive system tailored to business needs. ",
+    "company": "Lightbulb Technology Corp.",
+    "company_url": "https://lightbulb.com.ph/",
+    "start_year": "2024(March)",
+    "end_year": "2024(June)",
+    "technologies": [
+      {
+        "name": "PHP"
+      },
+      {
+        "name": "TypeScript"
+      },
+      {
+        "name": "Laravel"
+      },
+      {
+        "name": "Vue"
+      }
+    ]
+  },
+  {
+    "position": "Student Work Immersion",
+    "description": "Assisted in configuring and maintaining routers to ensure optimal network performance and reliability. Gained Hands-on experience  with network security protocols and practices, enhancing system resilience against potential threats. Provided technical support to team members during the installation and upgrading of network equipment.",
+    "company": "CITI Cable World, INC new City System.",
+    "company_url": "https://www.citicableworld.com/new-city-cable-system",
+    "start_year": "2020(January)",
+    "end_year": "2020(February)",
+    "technologies": [
+      {
+        "name": "Network Configuration"
+      },
+      {
+        "name": "Network Security"
+      },
+      {
+        "name": "Technical Support"
+      },
+      {
+        "name": "Network Equipment Installation"
       }
     ]
   }
