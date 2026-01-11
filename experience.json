@@ -1,11 +1,48 @@
 [
   {
+    "position": "Junior Programmer",
+    "description": "Responsible for debugging, testing, and optimizing software to ensure reliability and performance. Developed and maintained applications for data management and automation, collaborated with technical teams to gather requirements and resolve issues, and provided system analysis, documentation, and user support for configuration and troubleshooting.",
+    "company": "New Media Services Pty Ltd",
+    "company_url": "https://nms.ph/about-us/",
+    "start_year": "2025(March)",
+    "end_year": "2026(August)",
+    "technologies": [
+      {
+        "name": "PHP"
+      },
+      {
+        "name": "TypeScript"
+      },
+      {
+        "name": "Laravel"
+      },
+      {
+        "name": "React"
+      },
+      {
+        "name": "Full Stack Development"
+      },
+      {
+        "name": "Docker"
+      },
+      {
+        "name": "n8n"
+      },
+      {
+        "name": "CI/CD"
+      },
+      {
+        "name": "Filament"
+      },
+    ],
+  },
+  {
     "position": "Full Stack Developer (Freelance)",
     "description": "Designed and developed of three innovations system, ensuring seamless userexperience. Developed web application with diverse framework to meet client requirements.  Enhanced and modernized legacy codebases, boosting system performance and reducing redundant code.  Using Trello for project management and git for efficient version control.",
     "company": "Kwikweb OPC",
     "company_url": "https://kwikweb.ph/",
     "start_year": "2024(July)",
-    "end_year": "Present",
+    "end_year": "2025(Feb)",
     "technologies": [
       {
         "name": "PHP"
@@ -72,3 +109,4 @@
     ]
   }
 ]
+
