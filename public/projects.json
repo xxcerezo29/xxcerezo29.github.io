@@ -1,6 +1,42 @@
 [
   {
-    "year": "2024 - (Present)",
+    "year": "2025 - 2025",
+    "title": "Pantrichef",
+    "company": "KWIKWEB OPC",
+    "type": "Web App",
+    "description": "AI-powered recipe assistant that helps users generate meal ideas from the ingredients they already have. It invites visitors to input what's in their fridge or pantry and receive instant recipe suggestions, aiming to reduce food waste, save money, and make meal planning easier.",
+    "image_path": "",
+    "url": "https://pantrichef.com",
+    "technologies": [
+      {
+        "name": "PHP"
+      },
+
+      {
+        "name": "Laravel"
+      },
+      {
+        "name": "React"
+      },
+      {
+        "name": "Full Stack Development"
+      },
+      {
+        "name": "TypeScript"
+      },
+      {
+        "name": "Gemini"
+      },
+      {
+        "name": "AI Integration"
+      },
+      {
+        "name": "PWA"
+      }
+    ]
+  },
+  {
+    "year": "2024 - 2025",
     "title": "HPS Scheduling system",
     "company": "KWIKWEB OPC",
     "type": "Web App",
