@@ -77,11 +77,10 @@ onMounted(() => {
             Vincent Cerezo
           </h1>
           <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-            Full Stack Web Developer
+            Software Developer
           </h2>
           <p class="mt-4 max-2-xs leading-normal">
-            I specialize in creating dynamic and responsive web applications that bring innovative
-            ideas to life.
+            Software Developer and Web developer with a year of experience in JavaScript, React.Js Vue.JS, Laravel, MUI and Tailwind. Skilled in building responsive web applications, RESTful APIs, and Mobile applications. Quick to learn, and a proactive team player focused on delivering high-quality software and achieving project success.
           </p>
           <nav class="hidden lg:block">
             <ul class="mt-16 w-max">
